@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form name="frmreg" method="post">
+            <fieldset>
+                <legend>
+                    User personal information
+                </legend>
+            <div class="form-group">
+                <label
+                    >Enter your full name</label
+                >
+                <input type="text" name="name" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label>Enter your email</label>
+                <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                />
+                </div>
+                <div class="form-group">
+                <label>Enter your password</label>
+                <input
+                    type="password"
+                    name="pass"
+                    class="form-control"
+                />
+                </div>
+                <div class="form-group">
+                <label
+                    >Confirm your password</label
+                >
+                <input
+                    type="password"
+                    name="confirmPass"
+                    class="form-control"
+                />
+                </div>
+                <div class="form-group">
+                <label>Enter your gender</label>
+                <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                />Male
+                
+                <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                />Female
+                <input
+                    type="radio"
+                    name="gender"
+                    value="others"
+                />Others
+                </div>
+                <div class="form-group">
+                <label
+                    >Enter your Date of
+                    Birth</label
+                >
+                <input type="date" name="dob" />
+                </div>
+                <div class="form-group">
+                <label>Enter your Address:</label>
+                <textarea
+                    name="address"
+                    class="form-control"
+                ></textarea>
+            </div>
+                <input
+                    type="button"
+                    value="submit"
+                    onclick="getInfo()"
+                    
+                />
+                
+            </fieldset>
+        </form>
+        <div class="f_print">
+            <h2>Form Information</h2>
+            <p id="formInfo"></p>
+        </div>
+    </div>
+    
+
+</body>
+<script>
+    // function getInfo() {
+    //     var name = document.frmreg.name.value;
+    //     var email = document.frmreg.email.value;
+    //     var pass = document.frmreg.pass.value;
+    //     var confirmPass = document.frmreg.confirmPass.value;
+    //     var gender = document.frmreg.gender.value;
+    //     var dob = document.frmreg.dob.value;
+    //     var address = document.frmreg.address.value;
+    //     console.log(name)
+    //     document.getElementById("formInfo").innerHTML= `<ul>
+    //                                                     <h5>name:${name}</h5>
+    //                                                     <h5> email:${email}</h5>
+    //                                                     <h5> pass:${pass}</h5>
+    //                                                      <h5>gender:${gender}</h5>
+    //                                                      <h5>dob:${dob}</h5>
+    //                                                      <h5>address:${address}</h5> 
+    //                                                      </ul>`
+                                                         
+    // }
+    
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+        function greetUser() {
+            
+            const userInput = document.getElementById('userInput').value;
+            if(userInput=="")
+            {
+                document.getElementById("userInput").focus();
+                document.getElementById("output").innerText="Name cannot be blank";
+                document.getElementById('output_2').innerText="";
+            }else{
+                const greetingMessage = `Hello, ${userInput}!`;
+            
+                document.getElementById('output_2').innerText = greetingMessage;
+                document.getElementById("output").innerText="";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>name</h1>
+    
+    <input type="text" id="userInput" placeholder="Enter your name">
+    
+    <button onclick="greetUser()">Submit</button>
+
+    <span id="output"></span>
+    <div id="output_2"></div>
+        
+    </div>
+</body>
+</html>
